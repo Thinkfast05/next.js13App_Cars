@@ -24,7 +24,7 @@ const CustomFilter = ({ title, options }: CustomFilterProps) => {
           handleUpdateParams(e);
         }}
       >
-        <div className="relative w-fit z-10">
+        <div className="relative w-fit">
           <Listbox.Button className="custom-filter__btn">
             <span className="block truncate">{selected.title}</span>
             <Image
@@ -42,7 +42,6 @@ const CustomFilter = ({ title, options }: CustomFilterProps) => {
             leaveTo="opacity-0"
           >
             <Listbox.Options className="custom-filter__options">
-              {/* Map over the options and display them as listbox options */}
               {options.map((option) => (
                 <Listbox.Option
                   key={option.title}
